@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basket</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+    <link rel="stylesheet" href="../CSS/cart.css">
+  <script src="../Scripts/cart.js"></script>
+
+</head>
+
+<body id="body">
+  <div class="cover-container w-100 h-100 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+          <a href="/"><h3 class="masthead-brand">My E-Store</h3></a>
+        <nav class="nav nav-masthead justify-content-center" id="nav-class">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/catalog">Catalog</a>
+        </nav>
+      </div>
+    </header>
+    <div class="basket" id="bskta">
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal"></div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <!-- <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+            <option value="0" selected="selected">Select Collection or Delivery</option>
+            <option value="first-class">Royal Mail 1st Class</option>
+            <option value="second-class">Royal Mail 2nd Class</option>
+            <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div> -->
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total"></div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta" onclick="goToCheckout()"">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>

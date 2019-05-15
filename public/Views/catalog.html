@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalog</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/catalog.css">
+    <base href = "/catalog">
+    <script src="Scripts/catalog.js"></script>
+</head>
+<body >
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+           <a href="/"> <h3 class="masthead-brand">My E-Store</h3></a>
+            <nav class="nav nav-masthead justify-content-center" id="nav-class">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link active" href="">Catalog</a>
+            </nav>
+          </div>
+        </header>
+        <div class="row align-items-center justify-content-end">
+            <div class="col-md-4 pt-3">
+                 <div class="form-group ">
+                    <select id="inputState" class="form-control">
+                      <option selected>Title</option>
+                      <option>Developer</option>
+                      <option>Publisher</option>
+                    </select>
+                    <input type="text" id="search-value">
+                    <button type="button" class="btn btn-primary btn-block" onclick="searchItem()" >Search</button>
+                 </div>
+              </div>
+              </div>
+<main role="main">
+    <div class="container" id = "card-container">
+      <ul class="list-unstyled" id="list-of-games">
+      </ul>
+      </div>
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p>© My E-Store, 2018-2019</p>
+  </div>
+</footer>
+
+</body>

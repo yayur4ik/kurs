@@ -1,0 +1,182 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  /* height: 100%; */
+  background-color: rgb(45,45,45);
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+}
+
+.cover-container {
+  max-width: 60em;
+  background-color: rgb(45,45,45)
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+#carousel-text-id p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-size: small;
+}
+main{
+  background-color: rgb(45,45,45)
+}
+/*
+ * Cover
+ */
+.cover {
+  display:flex;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+  height:auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+.crslhead{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+#carouselExampleIndicators{
+  display: block;
+  width: 75%;
+  max-height: 40vh;
+}
+#add-cart{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, .25);
+}
+#im{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, .25);
+}
+#im p{
+  width: 80%;
+}
+#im button{
+  width: 20%;
+}
+#add-cart p{
+  width: 80%;
+}
+#add-cart button{
+  width: 20%;
+}
+.carousel-item{
+  width: 100%;
+}
+.carousel-text{
+  margin-left: 10%;
+  width: 25%;
+  display: block;
+
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+@media screen and ( max-width: 770px) and (min-width: 251px) {
+  #carouselExampleIndicators{
+    width: 100%;
+  }
+  .crslhead{
+    display:block;
+  }
+  .carousel-text{
+    display: none;
+  }  
+}
+
+@media screen and ( max-width: 250px){
+  #carouselExampleIndicators button{
+    width: 100%;
+  }
+  #carouselExampleIndicators p{
+    display: none;
+  }
+  .carousel-text{
+    display: none;
+  }  
+}
+/*
+ * Footer
+ */

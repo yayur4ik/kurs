@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/CSS/login.css">
+<script src="../Scripts/addGame.js"></script>
+</head>
+<body class="text-center">
+    <form class="form-signin"  onsubmit="addGame()">
+        <div class="form-row">
+            <label for="inputTitle">Title</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Title" required>
+            <label for="inputDescription">Description</label>
+            <input type="text" class="form-control" id="inputDescription" placeholder="Description"required>
+            <label for="inputPublisher">Publisher</label>
+            <input type="text" class="form-control" id="inputPublisher" placeholder="Publisher"required>
+            <label for="inputDeveloper">Developer</label>
+            <input type="text" class="form-control" id="inputDeveloper" placeholder="Developer"required>
+            <label for="inputReleasedate">Release date</label>
+            <input type="datetime" class="form-control" id="inputReleasedate" placeholder="Release date"required>
+            <label for="HeadImagelink">Head Image link</label>
+            <input type="url" class="form-control" id="HeadImagelink" placeholder="Head Image link"required>
+            <label for="inputPrice">Price in $</label>
+            <input type="text" class="form-control" id="inputPrice" placeholder="Price"required>
+        </div>
+    </div>
+    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit"></button>
+      </form>
+</body>
+</html>
